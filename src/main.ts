@@ -11,7 +11,8 @@ async function bootstrap() {
       transport: Transport.RMQ,
       options: {
         urls: [
-          'amqp://guest:guest@13.215.190.90:5672',
+          // 'amqp://guest:guest@13.215.190.90:5672',
+          'amqp://guest:guest@18.141.158.137:5672',
           // 'amqps://ynvyudss:NplTt26iNlrD9BJadzgZJkR3Akqirftn@armadillo.rmq.cloudamqp.com/ynvyudss',
         ],
         queue: 'chat_queue',

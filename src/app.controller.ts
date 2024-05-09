@@ -14,8 +14,6 @@ export class ChatController {
 
   @MessagePattern('get_messages')
   async getMessages(@Payload() data) {
-    console.log('here 1');
-
     try {
       const findMessages = await this.chatService.getMessages(data._id);
       return {
